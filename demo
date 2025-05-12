@@ -1,0 +1,4 @@
+<!-- what is docker file : it has some instruction to create image is called as docker file 
+what is purpose of dockerfile: if i want to create our own image 
+docker registry : it is hub whare we push the images and also pull the images is called docker registry  -->
+
