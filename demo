@@ -2,3 +2,15 @@
 what is purpose of dockerfile: if i want to create our own image 
 docker registry : it is hub whare we push the images and also pull the images is called docker registry  -->
 
+to create the image :
+docker build -t image_name   .
+
+to run docker image:
+docker run -it image_name
+
+to see the images 
+docker images 
+
+to see the continers:
+docker ps -a :it will show all the container with running and stoped conatiners 
+docker ps :it will show only running conatiners 

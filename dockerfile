@@ -8,3 +8,9 @@
 # ENTRYPOINT [ "executable" ]: It is used to set the main command for the container. It cannot be overridden by CMD.
 # EXPOSE port: Expose a port to the outside world. This is a documentation instruction and does not actually publish
 # WORKDIR /the/workdir/path: Set the working directory for subsequent instructions.
+
+FROM  openjdk 
+WORKDIR /app
+COPY . /app 
+RUN java Main.java
+CMD ["java", "Main.java"]
