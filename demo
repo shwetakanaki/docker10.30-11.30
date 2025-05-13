@@ -14,3 +14,25 @@ docker images
 to see the continers:
 docker ps -a :it will show all the container with running and stoped conatiners 
 docker ps :it will show only running conatiners 
+
+to create the repo :
+docker tag <image_name>:<tagname>  <username>/<image_name>:<tagname>
+ex: docker tag docker10.30:t1  shwetaraddy/docker10.30:t1
+
+to push image into docker hub :
+docker push <username/image_name>:<tagname>
+ex: docker push shwetaraddy/docker10.30:t1
+
+docker volume :
+creation of volume:
+docker volume create <volume_name>
+ex:docker volume create volume10.30
+
+to attach the volume :
+docker run -it --name <container_name>  --mount source=<volume_name>,target=</>  <image_name>
+docker run -it  --name database --mount source=volume10.30,target=/app docker10.30:t1
+
+docker network :
+ docker network create network10.30
+  25 docker network ls
+  26 docker run -it --name ubuntu10.30 --network network10.30 ubuntu
